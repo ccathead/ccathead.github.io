@@ -1,0 +1,306 @@
+:root {
+  --catie-page-bg: #efe8d6;
+  --catie-paper: #f7f1e3;
+  --catie-paper-deep: #ebe0c8;
+  --catie-ink: #34251c;
+  --catie-green: #28483b;
+  --catie-gold: #806b43;
+  --catie-line: rgba(128, 107, 67, 0.34);
+  --catie-muted: #66594d;
+  --catie-shadow: 0 12px 35px rgba(52, 37, 28, 0.09);
+  --global-font-size: 16px;
+  --global-bg: var(--catie-page-bg);
+  --font-color: var(--catie-ink);
+  --text-highlight-color: var(--catie-green);
+  --btn-bg: var(--catie-green);
+  --btn-color: var(--catie-paper);
+  --link-color: var(--catie-green);
+  --hr-border: var(--catie-line);
+  --card-bg: rgba(247, 241, 227, 0.94);
+}
+
+[data-theme='dark'] {
+  --catie-page-bg: #271f1a;
+  --catie-paper: #352921;
+  --catie-paper-deep: #403127;
+  --catie-ink: #eee4cf;
+  --catie-green: #8faa8d;
+  --catie-gold: #c4aa70;
+  --catie-line: rgba(196, 170, 112, 0.31);
+  --catie-muted: #c4b7a3;
+  --catie-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+  --global-bg: var(--catie-page-bg);
+  --font-color: var(--catie-ink);
+  --text-highlight-color: var(--catie-gold);
+  --btn-bg: #405c4d;
+  --card-bg: rgba(53, 41, 33, 0.97);
+}
+
+[data-theme='dark'] body,
+[data-theme='dark'] #web_bg { background-color: var(--catie-page-bg) !important; }
+
+[data-theme='dark'] #nav {
+  background: rgba(53, 41, 33, 0.94);
+  border-bottom-color: var(--catie-line);
+}
+
+[data-theme='dark'] #card-info-btn {
+  background: #405c4d !important;
+  color: #f7f1e3 !important;
+}
+
+[data-theme='dark'] .card-info-social-icons .social-icon i {
+  color: var(--catie-gold) !important;
+}
+
+html, body {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+  color: var(--catie-ink);
+}
+
+body {
+  background-color: var(--catie-page-bg);
+  background-image: radial-gradient(rgba(128, 107, 67, 0.06) 0.7px, transparent 0.7px);
+  background-size: 8px 8px;
+}
+
+#nav {
+  background: color-mix(in srgb, var(--catie-paper) 92%, transparent);
+  border-bottom: 1px solid var(--catie-line);
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+}
+
+#nav a, #nav #site-name, #nav .site-page {
+  color: var(--catie-ink) !important;
+  text-shadow: none;
+  font-family: Georgia, "Noto Serif SC", serif;
+}
+
+#page-header.not-top-img { margin-bottom: 2rem; }
+
+#site-title {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.035em;
+  color: var(--catie-ink) !important;
+}
+
+#site-subtitle { color: var(--catie-green) !important; }
+
+#recent-posts > .recent-post-item,
+.card-widget,
+#post,
+#page,
+#archive,
+#tag,
+#category {
+  border: 1px solid var(--catie-line);
+  border-radius: 5px;
+  background: var(--card-bg);
+  box-shadow: var(--catie-shadow);
+}
+
+#recent-posts > .recent-post-item { overflow: hidden; }
+
+.article-title,
+.post-title,
+h1, h2, h3, h4 {
+  font-family: Georgia, "Noto Serif SC", "Songti SC", serif;
+  color: var(--catie-ink);
+}
+
+.article-sort-title,
+.article-sort-item-title,
+#aside-content .card-info .author-info__name { color: var(--catie-green); }
+
+a { transition: color 0.55s ease, border-color 0.55s ease, box-shadow 0.55s ease; }
+a:hover { color: var(--catie-gold); }
+
+.layout > div:first-child:not(.recent-posts) { max-width: 860px; }
+
+#article-container {
+  font-size: 1.03rem;
+  line-height: 1.9;
+}
+
+#article-container p,
+#article-container li { max-width: 72ch; }
+
+#article-container blockquote {
+  border-left: 0;
+  border-top: 1px solid var(--catie-line);
+  border-bottom: 1px solid var(--catie-line);
+  background: transparent;
+  color: var(--catie-muted);
+  text-align: center;
+  font-style: italic;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--catie-gold), transparent);
+}
+
+.catie-project-intro .en,
+.catie-en-landing,
+.catie-actions { color: var(--catie-muted); }
+
+.catie-home-hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  padding: clamp(3.2rem, 8vw, 6.5rem) 1.5rem;
+  border: 1px solid var(--catie-line);
+  border-radius: 5px;
+  background: var(--card-bg);
+  box-shadow: var(--catie-shadow);
+  text-align: center;
+}
+
+.catie-home-hero::before,
+.catie-home-hero::after {
+  content: '';
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--catie-gold), transparent);
+}
+
+.catie-home-hero::before { top: 1.4rem; }
+.catie-home-hero::after { bottom: 1.4rem; }
+
+.catie-home-mark {
+  display: inline-grid;
+  width: 3.2rem;
+  height: 3.2rem;
+  place-items: center;
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--catie-gold);
+  border-radius: 50%;
+  color: var(--catie-gold);
+  font: 700 1rem/1 Georgia, serif;
+}
+
+.catie-kicker {
+  margin: 0 0 0.8rem;
+  color: var(--catie-green);
+  font: 0.78rem/1.4 Georgia, serif;
+  letter-spacing: 0.17em;
+}
+
+.catie-home-hero h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 8vw, 5.8rem);
+  line-height: 1.05;
+}
+
+.catie-home-motto {
+  margin: 1.2rem 0;
+  color: var(--catie-gold);
+  font-size: 1.25rem;
+  letter-spacing: 0.35em;
+}
+
+.catie-home-description {
+  margin: 0.25rem auto;
+  color: var(--catie-ink);
+  font-size: 1rem;
+}
+
+.catie-home-description.en {
+  color: var(--catie-muted);
+  font-size: 0.92rem;
+}
+
+.catie-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.catie-project-card {
+  padding: 1.6rem;
+  border: 1px solid var(--catie-line);
+  border-radius: 4px;
+  background: var(--catie-paper-deep);
+  box-shadow: 0 8px 20px rgba(52, 37, 28, 0.06);
+}
+
+.project-kind,
+.project-status {
+  color: var(--catie-green);
+  font-size: 0.88rem;
+}
+
+.project-status {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--catie-line);
+}
+
+.catie-about-lead,
+.catie-en-landing {
+  padding: 2.5rem 1rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid var(--catie-line);
+  border-bottom: 1px solid var(--catie-line);
+  text-align: center;
+}
+
+.catie-signature {
+  margin: 0;
+  color: var(--catie-ink);
+  font: 700 clamp(2.4rem, 7vw, 5rem)/1 Georgia, serif;
+}
+
+.catie-motto {
+  margin: 1rem 0 0;
+  color: var(--catie-gold);
+  font-size: 1.25rem;
+  letter-spacing: 0.3em;
+}
+
+.catie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.7rem;
+}
+
+.catie-actions a {
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--catie-line);
+  border-radius: 3px;
+  color: var(--catie-ink);
+}
+
+.catie-actions a:hover {
+  border-color: var(--catie-gold);
+  box-shadow: inset 0 0 18px rgba(128, 107, 67, 0.08);
+}
+
+#footer {
+  background: #34251c;
+  border-top: 1px solid #806b43;
+  color: #f7f1e3;
+}
+
+@media (max-width: 768px) {
+  .catie-project-grid { grid-template-columns: 1fr; }
+  #article-container { font-size: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -1,0 +1,169 @@
+nav:
+  display_title: true
+  display_post_title: true
+  fixed: true
+
+menu:
+  首页 Home: / || fas fa-feather-alt
+  文章 Writing: /archives/ || fas fa-book-open
+  项目 Projects: /projects/ || fas fa-flask
+  笔记 Notes: /categories/学习笔记/ || fas fa-bookmark
+  生活 Life: /life/ || fas fa-mug-hot
+  关于 About: /about/ || fas fa-user
+  EN: /en/ || fas fa-language
+
+social:
+  fab fa-github: https://github.com/ccathead || GitHub || '#8b7355'
+  fab fa-zhihu: https://www.zhihu.com/people/zhifmcvn || 知乎 || '#2d4a3e'
+
+favicon: /img/favicon.svg
+avatar:
+  img: /img/avatar.svg
+  effect: false
+
+disable_top_img: true
+default_top_img: false
+index_img: false
+archive_img: false
+tag_img: false
+category_img: false
+footer_img: false
+background: var(--catie-page-bg)
+
+cover:
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
+
+subtitle:
+  enable: true
+  effect: false
+  source: false
+  sub:
+    - 技术、研究与生活中的长期记录
+    - Notes on technology, research, and life
+
+index_layout: 4
+index_post_content:
+  method: 2
+  length: 240
+
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+  post:
+    position: left
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+toc:
+  post: true
+  page: true
+  number: false
+  expand: false
+  style_simple: true
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  decode: false
+  author_href: https://github.com/ccathead
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+noticeOutdate:
+  enable: true
+  style: simple
+  limit_day: 365
+  position: top
+  message_prev: 本文最后更新于
+  message_next: 天前，部分内容可能需要重新核验。
+
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: false
+    version: false
+  custom_text: 'Catie’s Library · 长安.'
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: false
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 长安.
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/ccathead
+  card_announcement:
+    enable: true
+    content: 中文优先 · English available
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+  card_tags:
+    enable: true
+    limit: 20
+    color: false
+  card_archives:
+    enable: true
+    type: monthly
+    format: YYYY年MM月
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: false
+
+readmode: true
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1
+
+search:
+  use: local_search
+  placeholder: 搜索文章 / Search
+  local_search:
+    preload: false
+    top_n_per_article: 3
+    unescape: false
+    pagination:
+      enable: true
+      hitsPerPage: 8
+
+comments:
+  use:
+
+lazyload:
+  enable: true
+  field: site
+  blur: false
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/catie.css">
+  bottom:
+    - <script src="/js/catie.js"></script>
