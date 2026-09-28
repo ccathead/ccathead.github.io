@@ -13,7 +13,7 @@ menu:
   EN: /en/ || fas fa-language
 
 social:
-  fab fa-github: https://github.com/ccathead || GitHub || '#8b7355'
+  fab fa-zhihu: https://www.zhihu.com/people/zhifmcvn || 知乎 || '#806b43'
 
 favicon: /img/favicon.svg
 avatar:
