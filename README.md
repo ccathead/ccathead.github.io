@@ -19,4 +19,16 @@ pnpm server
 - 只有完成引用、图片、链接与隐私检查的内容才能设置为 `published: true`。
 - 中英文版本使用相同的 `translation_key`。
 
+## Notes 同步
+
+`PARA/Resources/Notes` 是公开学习笔记的唯一原稿库。只有明确设置 `website: true` 和 `published: true` 的笔记会同步到网站：
+
+```bash
+pnpm sync:notes
+pnpm check:notes
+pnpm preview:notes
+```
+
+详细规则见 `PUBLISHING.md`。生成稿位于 `source/_posts/`，不要直接编辑。
+
 微信公众号入口将在账号信息和二维码补充后启用。

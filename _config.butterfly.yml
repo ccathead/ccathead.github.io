@@ -166,3 +166,5 @@ inject:
     - <link rel="stylesheet" href="/css/catie.css">
   bottom:
     - <script src="/js/catie.js"></script>
+    - <script src="/js/mathjax-config.js"></script>
+    - <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
