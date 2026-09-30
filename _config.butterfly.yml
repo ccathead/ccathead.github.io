@@ -7,7 +7,6 @@ menu:
   首页 Home: / || fas fa-feather-alt
   文章 Writing: /archives/ || fas fa-book-open
   项目 Projects: /projects/ || fas fa-flask
-  笔记 Notes: /categories/学习笔记/ || fas fa-bookmark
   生活 Life: /life/ || fas fa-mug-hot
   关于 About: /about/ || fas fa-user
   EN: /en/ || fas fa-language
@@ -113,8 +112,7 @@ aside:
       text: GitHub
       link: https://github.com/ccathead
   card_announcement:
-    enable: true
-    content: 中文优先 · English available
+    enable: false
   card_recent_post:
     enable: true
     limit: 5
