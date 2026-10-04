@@ -64,7 +64,7 @@ P(x_1,x_2,\ldots,x_T)
 \[
 P(x_{1:T})
 =
-\prod_{t=1}^{T}P(x_t\mid x_{<t})
+\prod_{t=1}^{T}P(x_t\mid x_{&lt;t})
 \]
 </div>
 {% endraw %}
@@ -201,7 +201,7 @@ Logit 是模型对候选 token 的未归一化分数。通过 Softmax 可以将�
 {% raw %}
 <div class="math-display">
 \[
-P(x_t=i\mid x_{<t})
+P(x_t=i\mid x_{&lt;t})
 =
 \frac{\exp(z_i)}{\sum_{j=1}^{|V|}\exp(z_j)}
 \]
@@ -211,7 +211,7 @@ P(x_t=i\mid x_{<t})
 {% raw %}
 <div class="math-display">
 \[
-\sum_{i=1}^{|V|}P(x_t=i\mid x_{<t})=1
+\sum_{i=1}^{|V|}P(x_t=i\mid x_{&lt;t})=1
 \]
 </div>
 {% endraw %}
@@ -226,7 +226,7 @@ P(x_t=i\mid x_{<t})
 {% raw %}
 <div class="math-display">
 \[
-\sum_{t=1}^{T}\log P_\theta(x_t\mid x_{<t})
+\sum_{t=1}^{T}\log P_\theta(x_t\mid x_{&lt;t})
 \]
 </div>
 {% endraw %}
@@ -237,7 +237,7 @@ P(x_t=i\mid x_{<t})
 \[
 \mathcal{L}(\theta)
 =
--\sum_{t=1}^{T}\log P_\theta(x_t\mid x_{<t})
+-\sum_{t=1}^{T}\log P_\theta(x_t\mid x_{&lt;t})
 \]
 </div>
 {% endraw %}
@@ -282,7 +282,7 @@ P(x_t=i\mid x_{<t})
 {% raw %}
 <div class="math-display">
 \[
-P(x_t\mid x_{<t})
+P(x_t\mid x_{&lt;t})
 \]
 </div>
 {% endraw %}
@@ -307,7 +307,7 @@ P(x_t\mid x_{<t})
 {% raw %}
 <div class="math-display">
 \[
-x_t=\arg\max_i P(x_t=i\mid x_{<t})
+x_t=\arg\max_i P(x_t=i\mid x_{&lt;t})
 \]
 </div>
 {% endraw %}

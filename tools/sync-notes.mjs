@@ -124,7 +124,12 @@ function assertPortable(body, sourcePath) {
 
 function protectDisplayMath(body, sourcePath) {
   const protectedBody = body.replace(/^\$\$\s*\n([\s\S]*?)\n\$\$\s*$/gm, (_, formula) => {
-    return `{% raw %}\n<div class="math-display">\n\\[\n${formula.trim()}\n\\]\n</div>\n{% endraw %}`
+    const escapedFormula = formula
+      .trim()
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+    return `{% raw %}\n<div class="math-display">\n\\[\n${escapedFormula}\n\\]\n</div>\n{% endraw %}`
   })
   const remainingFences = protectedBody.match(/^\$\$\s*$/gm)
   if (remainingFences) throw new Error(`存在未配对或未转换的块级公式：${sourcePath}`)
