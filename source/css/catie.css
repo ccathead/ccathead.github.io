@@ -26,8 +26,10 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--catie-gold);outlin
 #page-header.not-top-img #nav,#page-header.nav-fixed #nav {height:64px;padding:0 max(24px,calc((100% - 1040px)/2));background:var(--catie-page-bg);border-bottom:1px solid var(--catie-line);box-shadow:none}
 #nav a,#nav .site-name,#nav .site-page {color:var(--catie-ink)!important;text-shadow:none}
 #nav .site-name {font-size:18px;letter-spacing:-.025em}
+#nav #blog-info .site-icon {width:26px;height:26px;margin-right:8px}
 #nav #menus {display:flex;align-items:center;gap:12px;font-size:14px}
-#nav .menus_item .site-page,#sidebar-menus .menus_item .site-page {font-size:16px;font-weight:700}
+#nav .menus_items > .menus_item > .site-page > span {font-size:18px;font-weight:750}
+#sidebar-menus .menus_item .site-page {font-size:16px;font-weight:700}
 #nav .menus_item .site-page>i:first-child {display:none}
 #nav .menus_item .site-page::after {background:var(--catie-gold)}
 #search-button {order:2} #nav #search-button .site-page {cursor:pointer}
@@ -92,7 +94,7 @@ hr {height:1px;border:0;background:var(--catie-line)}
 #footer .footer-other {padding:28px 20px;font-size:12px}
 #rightside>div>button {border-radius:5px;background:var(--catie-paper-deep);color:var(--catie-green)}
 .search-dialog {border:1px solid var(--catie-line);border-radius:8px;background:var(--catie-page-bg)}
-@media(max-width:900px) {#nav .menus_item {padding-left:9px} #nav #menus {gap:8px;font-size:12px} #nav .menus_item .site-page {font-size:14px}}
+@media(max-width:900px) {#nav .menus_item {padding-left:9px} #nav #menus {gap:8px;font-size:12px} #nav .menus_items > .menus_item > .site-page > span {font-size:16px}}
 @media(max-width:768px) {
   #page-header.not-top-img #nav,#page-header.nav-fixed #nav {padding:0 20px} #nav .site-name {font-size:16px}
   .layout,.layout.hide-aside {padding:32px 22px 48px} #post {padding:0}
