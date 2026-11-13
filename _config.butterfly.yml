@@ -17,7 +17,7 @@ social:
 
 favicon: /img/favicon.svg?v=t1
 avatar:
-  img: /img/avatar.svg
+  img: /img/favicon.svg?v=t1
   effect: false
 
 disable_top_img: true
@@ -162,7 +162,7 @@ lazyload:
 
 inject:
   head:
-    - <link rel="stylesheet" href="/css/catie.css?v=t2">
+    - <link rel="stylesheet" href="/css/catie.css?v=t3">
   bottom:
     - <script src="/js/catie.js?v=t2"></script>
     - <script src="/js/mathjax-config.js"></script>
