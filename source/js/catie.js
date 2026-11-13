@@ -25,13 +25,11 @@
         hero.className = 'catie-home-hero';
         hero.setAttribute('aria-labelledby', 'catie-home-title');
         hero.innerHTML = `<h1 id="catie-home-title">Nice to Meet you</h1>
-          <p class="catie-home-motto">长安.</p>
-          <p class="catie-home-description">A place for curiosity, study, and everyday life.</p>`;
+          <p class="catie-home-motto">长安.</p>`;
         main.before(hero);
         const intro = document.createElement('div');
         intro.className = 'catie-home-intro';
-        intro.innerHTML = `<p>技术 · 研究 · 生活 — 在这里，留下长期的记录。</p>
-          <p class="en">Notes on technology, research, and life.</p>`;
+        intro.innerHTML = '<p lang="fr">Je veux la gloire à mes genoux</p>';
         const heading = document.createElement('div');
         heading.className = 'catie-list-heading';
         heading.innerHTML = '<h2>最新文章<span>Recent writing</span></h2><a href="/archives/">全部文章 →</a>';

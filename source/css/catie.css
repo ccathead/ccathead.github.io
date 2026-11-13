@@ -28,8 +28,8 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--catie-gold);outlin
 #nav .site-name {font-size:18px;letter-spacing:-.025em}
 #nav #blog-info .site-icon {width:26px;height:26px;margin-right:8px}
 #nav #menus {display:flex;align-items:center;gap:12px;font-size:14px}
-#nav .menus_items > .menus_item > .site-page > span {font-size:18px;font-weight:750}
-#sidebar-menus .menus_item .site-page {font-size:16px;font-weight:700}
+#nav .menus_items > .menus_item > .site-page > span {font-size:18px;font-weight:400}
+#sidebar-menus .menus_item .site-page {font-size:16px;font-weight:400}
 #nav .menus_item .site-page>i:first-child {display:none}
 #nav .menus_item .site-page::after {background:var(--catie-gold)}
 #search-button {order:2} #nav #search-button .site-page {cursor:pointer}
@@ -47,10 +47,8 @@ a:focus-visible,button:focus-visible {outline:2px solid var(--catie-gold);outlin
 .catie-home-hero::after {content:'';position:absolute;inset:auto 0 0;height:105px;background:linear-gradient(transparent,var(--catie-page-bg));pointer-events:none}
 .catie-home-hero h1 {margin:0;color:var(--catie-hero-ink);font-size:clamp(38px,6vw,68px);font-weight:650;line-height:1.2;letter-spacing:.025em}
 .catie-home-motto {margin:14px 0 8px;color:var(--catie-hero-muted);font-size:20px;letter-spacing:.24em}
-.catie-home-description {margin:0;color:var(--catie-hero-muted);font-size:14px}
 .catie-home-intro {text-align:center;margin:0 0 52px}
 .catie-home-intro>p {margin:0;color:var(--catie-muted);font-size:17px;line-height:1.9;letter-spacing:.09em}
-.catie-home-intro .en {font-size:13px;letter-spacing:.06em}
 .catie-home-intro::after {content:'';display:block;width:48px;height:1px;margin:28px auto 0;background:var(--catie-gold)}
 .catie-list-heading {display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding-bottom:14px;border-bottom:1px solid var(--catie-line)}
 .catie-list-heading h2 {margin:0;font-size:22px;font-weight:600;color:var(--catie-green)}
@@ -99,7 +97,7 @@ hr {height:1px;border:0;background:var(--catie-line)}
   #page-header.not-top-img #nav,#page-header.nav-fixed #nav {padding:0 20px} #nav .site-name {font-size:16px}
   .layout,.layout.hide-aside {padding:32px 22px 48px} #post {padding:0}
   .catie-home-hero {padding:80px 20px 110px} .catie-home-intro {margin-bottom:36px}
-  .catie-home-intro>p {font-size:14px;letter-spacing:.04em} .catie-home-intro .en {font-size:12px}
+  .catie-home-intro>p {font-size:14px;letter-spacing:.04em}
   #recent-posts .recent-post-items .recent-post-item .article-title {font-size:18px}
   .catie-project-grid {grid-template-columns:1fr} #recent-posts .article-meta.tags {display:none}
 }
