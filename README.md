@@ -1,4 +1,4 @@
-# Catie’s Library
+# Nice to Meet you
 
 中文优先的双语个人技术博客，内容包括公开研究项目、技术项目、学习笔记与生活记录。
 

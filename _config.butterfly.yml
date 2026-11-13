@@ -91,7 +91,7 @@ footer:
   copyright:
     enable: false
     version: false
-  custom_text: 'Catie’s Library · 长安.'
+  custom_text: 'Nice to Meet you · 长安.'
 
 aside:
   enable: true
@@ -100,11 +100,11 @@ aside:
   mobile: false
   position: right
   display:
-    archive: true
-    tag: true
-    category: true
+    archive: false
+    tag: false
+    category: false
   card_author:
-    enable: true
+    enable: false
     description: 长安.
     button:
       enable: true
@@ -114,19 +114,19 @@ aside:
   card_announcement:
     enable: false
   card_recent_post:
-    enable: true
+    enable: false
     limit: 5
     sort: date
   card_categories:
-    enable: true
+    enable: false
     limit: 8
     expand: none
   card_tags:
-    enable: true
+    enable: false
     limit: 20
     color: false
   card_archives:
-    enable: true
+    enable: false
     type: monthly
     format: YYYY年MM月
     order: -1

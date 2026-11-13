@@ -1,12 +1,12 @@
 ---
-title: Catie’s Library · English
+title: Nice to Meet you · English
 date: 2026-09-28
 comments: false
 aside: false
 ---
 
 <div class="catie-en-landing">
-  <p class="catie-signature">Catie’s Library</p>
+  <p class="catie-signature">Nice to Meet you</p>
   <p class="catie-motto">长安.</p>
   <p>Notes on technology, research, learning, and life.</p>
   <div class="catie-actions">

@@ -1,5 +1,5 @@
 ---
-title: Welcome to Catie’s Library
+title: Welcome to Nice to Meet you
 date: 2026-09-28 10:00:00
 updated: 2026-09-28 10:00:00
 lang: en
@@ -9,7 +9,7 @@ comments: false
 description: A growing collection of notes on technology, research, learning, and life.
 ---
 
-Welcome to **Catie’s Library**.
+Welcome to **Nice to Meet you**.
 
 This site is both a public technical library and a record in progress. It will collect technical practice, public research and engineering projects, learning notes, and occasional fragments of everyday life.
 

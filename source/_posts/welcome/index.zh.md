@@ -1,5 +1,5 @@
 ---
-title: 欢迎来到 Catie’s Library
+title: 欢迎来到 Nice to Meet you
 date: 2026-09-28 10:00:00
 updated: 2026-09-28 10:00:00
 lang: zh-CN
@@ -10,7 +10,7 @@ description: 这里将记录技术探索、研究项目、学习笔记与生活�
 published: true
 ---
 
-这里是 **Catie’s Library**。
+这里是 **Nice to Meet you**。
 
 我会在这里整理技术实践、学习笔记、分享日常。
 
